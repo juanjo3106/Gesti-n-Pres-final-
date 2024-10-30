@@ -175,6 +175,14 @@ public class PrincipalMenu {
                     break;
 
                 case 4:
+                    //importar
+                    break;
+                    
+                case 5:
+                    //exportar
+                    break;    
+
+                case 6:
                     JOptionPane.showMessageDialog(null,"\tSaliendo del programa, Gracias por usar nuestro servicio.\t");
                     break;
 
