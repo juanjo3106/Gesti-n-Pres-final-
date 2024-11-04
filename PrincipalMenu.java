@@ -174,13 +174,17 @@ public class PrincipalMenu {
                     md.Mostrarlistas(listaED, listaDD);
                     break;
 
-                case 4:
-                    //importar
+                    case 4: // Importar Archivo
+                    Importar.importarDatos(listaEI, listaDI);
+                    JOptionPane.showMessageDialog(null, "Datos importados con éxito.");
                     break;
-                    
-                case 5:
-                    //exportar
-                    break;    
+                
+                case 5: // Exportar Archivo
+                    Exportar.exportarDatos(listaEI, listaDI);
+                    JOptionPane.showMessageDialog(null, "Datos exportados con éxito.");
+                    break;
+                
+             
 
                 case 6:
                     JOptionPane.showMessageDialog(null,"\tSaliendo del programa, Gracias por usar nuestro servicio.\t");

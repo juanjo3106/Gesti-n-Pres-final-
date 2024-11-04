@@ -1,0 +1,2 @@
+Laptop,01,Acer,18.0,4500000.0,Windows 11,Intel® Core™ i5
+EstudianteIngenieria,1020104717,Alejandro,Gutierrez,3216860801,01,5,4.1
