@@ -1,2 +1,4 @@
-Laptop,01,Acer,18.0,4500000.0,Windows 11,Intel® Core™ i5
-EstudianteIngenieria,1020104717,Alejandro,Gutierrez,3216860801,01,5,4.1
+Laptop,01,Acer,19.0,5000000.0,Windows 11,Intel® Core™ i5
+Tablet,01,Lenovo,16.0,1500000.0,512 GB,1.0
+EstudianteIngenieria,123456789,Juan Jose,Giraldo Gonzalez,321456987,01,4,4.3
+EstudianteDiseno,1020104717,Alejandro,Gutierrez Zapata,3216860801,01,Virtual,5

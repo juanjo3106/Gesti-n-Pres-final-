@@ -317,7 +317,7 @@ public class MetodosInge {
                     if (lap.getSerial().equalsIgnoreCase(serialBuscar)
                             && e2.getSerial().equalsIgnoreCase(serialBuscar)) {
 
-                        mensaje = "\t El equipo que se busco es \t\n" +
+                        mensaje = "\t El equipo que se busco es: \t\n" +
                                 disp.MostrarMaestroD() +
                                 "Sistema operativo: " + lap.getSistemaOperativo() + "\n" +
                                 "Procesador: " + lap.getProcesador() + "\n" +
@@ -469,7 +469,7 @@ public class MetodosInge {
     
                 if (e2.getSerial().equalsIgnoreCase(buscarSerial)) {
                     lista2.remove(e2);
-                    JOptionPane.showMessageDialog(null,"se ha devuelto el equipo correctamente, por ende el estudiante ya no esta vinculado con el dispositivo. Muchas Gracias");
+                    JOptionPane.showMessageDialog(null,"Se ha devuelto el equipo correctamente, por ende el estudiante ya no esta vinculado con el dispositivo. Muchas Gracias");
                 } else {
                     JOptionPane.showMessageDialog(null,"No se ha encontrado un dispositivo con ese serial, intente de nuevo.");
                 }

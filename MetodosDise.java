@@ -96,7 +96,7 @@ public class MetodosDise {
 
             while (true) {
                 try {
-                    ModEstudio = JOptionPane.showInputDialog("Ingrese el modo de estudio (virtual/presencial):");
+                    ModEstudio = JOptionPane.showInputDialog("Ingrese el modo de estudio (Virtual/Presencial):");
                     if (ModEstudio == null) {
                         return lista;
                     } else if (!ModEstudio.equalsIgnoreCase("virtual") && !ModEstudio.equalsIgnoreCase("presencial")) {
@@ -348,7 +348,7 @@ public class MetodosDise {
 
                     if (tab.getSerial().equalsIgnoreCase(buscarSerial) && e1.getSerial().equalsIgnoreCase(buscarSerial)) {
 
-                        JOptionPane.showMessageDialog(null, "Se modificará el estudinate que está usando el Dispositivo");
+                        JOptionPane.showMessageDialog(null, "Se modificará el estudiante que está usando el Dispositivo");
 
                         while (flag) {
                             cedula = JOptionPane.showInputDialog("Ingrese la cedula del estudiante:");
@@ -392,7 +392,7 @@ public class MetodosDise {
 
                         while (true) {
                             try {
-                                ModEstudio = JOptionPane.showInputDialog("Ingrese el modo de estudio (virtual/presencial):");
+                                ModEstudio = JOptionPane.showInputDialog("Ingrese el modo de estudio (Virtual/Presencial):");
                                 if (ModEstudio == null) {
                                     return lista2;
                                 } else if (!ModEstudio.equalsIgnoreCase("virtual")

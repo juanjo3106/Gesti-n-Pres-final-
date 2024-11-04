@@ -32,7 +32,7 @@ public class PrincipalMenu {
                 case 1:
                     // Estudiante ingenieria
                     while (opt1 != 5) {
-                        String mensaje1 = "\n\t Que desea hacer \t\n" +
+                        String mensaje1 = "\n\t ¿Que desea hacer? \t\n" +
                                 "1 Registrar préstamo de equipo.\n" +
                                 "2 Modificar préstamo del equipo (Por Serial).\n" +
                                 "3 Devolucion del equipo (Por Serial).\n" +
@@ -66,7 +66,7 @@ public class PrincipalMenu {
                             case 2:
                                 // Modificar equipo
                                 String serialB;
-                                serialB = JOptionPane.showInputDialog("Ingrese el serial del dispositivo, Donde se modificará el Estudiante que hace uso del el.");
+                                serialB = JOptionPane.showInputDialog("Ingrese el serial del dispositivo (Donde se modificará el Estudiante que hace uso del el).");
                                 mi.Modificar(serialB, listaDI, listaEI);
 
                                 break;
@@ -89,7 +89,7 @@ public class PrincipalMenu {
 
                             case 5:
                                 // Salir del menú 2
-                                JOptionPane.showMessageDialog(null, "volviendo al menú principal");
+                                JOptionPane.showMessageDialog(null, "Volviendo al menú principal...");
                                 break;
 
                             default:
@@ -104,7 +104,7 @@ public class PrincipalMenu {
                 case 2:
                     // Estudiante Diseño
                     while (opt2 != 5) {
-                        String mensaje2 = "\n\t Que desea hacer \t\n" +
+                        String mensaje2 = "\n\t ¿Que desea hacer? \t\n" +
                                 "1 Registrar préstamo de equipo.\n" +
                                 "2 Modificar préstamo del equipo (Por Serial).\n" +
                                 "3 Devolucion del equipo (Por Serial).\n" +
@@ -137,7 +137,7 @@ public class PrincipalMenu {
                             case 2:
                                 // Modificar equipo
                                 String serialB;
-                                serialB = JOptionPane.showInputDialog("Ingrese el serial del dispositivo, Donde se modificará el Estudiante que hace uso del el.");
+                                serialB = JOptionPane.showInputDialog("Ingrese el serial del dispositivo (Donde se modificará el Estudiante que hace uso del el).");
                                 md.Modificar(serialB, listaDD, listaED);
                                 break;
 
@@ -158,7 +158,7 @@ public class PrincipalMenu {
 
                             case 5:
                                 // Salir del menú 2
-                                JOptionPane.showMessageDialog(null, "volviendo al menú principal");
+                                JOptionPane.showMessageDialog(null, "Volviendo al menú principal");
                                 break;
 
                             default:
@@ -175,19 +175,21 @@ public class PrincipalMenu {
                     break;
 
                     case 4: // Importar Archivo
-                    Importar.importarDatos(listaEI, listaDI);
+                    Importar.importarDatos(listaEI, listaDI, listaED, listaDD);
                     JOptionPane.showMessageDialog(null, "Datos importados con éxito.");
                     break;
                 
                 case 5: // Exportar Archivo
-                    Exportar.exportarDatos(listaEI, listaDI);
+                    Exportar.exportarDatos(listaEI, listaDI, listaED, listaDD);
                     JOptionPane.showMessageDialog(null, "Datos exportados con éxito.");
                     break;
                 
              
 
                 case 6:
-                    JOptionPane.showMessageDialog(null,"\tSaliendo del programa, Gracias por usar nuestro servicio.\t");
+                    JOptionPane.showMessageDialog(null,"\tGracias por usar nuestro servicio.\t");
+                    JOptionPane.showMessageDialog(null,"\tSaliendo del programa...\t");
+                    
                     break;
 
                 default:
